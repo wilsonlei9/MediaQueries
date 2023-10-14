@@ -1,0 +1,84 @@
+/* Default styles for all viewports */
+body {
+    background-color: rgb(132, 11, 65);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #b3b8ea;
+}
+
+p {
+    color: white;
+}
+
+/* Mobile Viewport */
+@media (max-width: 600px) {
+    .mobile {
+        display: block;
+    }
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+    body {
+        background-color: #a31578;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Tablet Viewport */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .tablet {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+/* Desktop Viewport */
+@media (min-width: 1025px) {
+    .desktop {
+        display: block;
+    }
+    .tablet {
+        display: none;
+    }
+    .mobile {
+        display: none;
+    }
+    body {
+        background-color: rgb(33, 32, 32);
+        max-width: 800px;
+        margin: 0, auto;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
